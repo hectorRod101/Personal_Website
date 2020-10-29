@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/default.css">
+	 <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <!-- Google Map -->
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlIaeGMdPlINtXsIGF3_ewlLD0CKHYuA8&callback=initMap&libraries=&v=weekly"></script>
+    <script>
+        function initMap() {
+          // Styles a map in night mode.
+          const map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 33.8366, lng: -117.9143 },
+            zoom: 15, zoomControl: false, mapTypeControl: false, 
+            scaleControl: false, streetViewControl: false, rotateControl: false, 
+            fullscreenControl: false,
+            styles: [
+              { elementType: "geometry", stylers: [{ color: "#040f25" }] },
+              /* Outside Street  Names */
+              {
+                elementType: "labels.text.stroke",
+                stylers: [{ color: "#0a192f" }],
+              },
+              /* Main City Names & Places */
+              {
+                elementType: "labels.text.fill",
+                stylers: [{ color: "#e6f1ff" }],
+              },
+              {
+                featureType: "administrative.locality",
+                elementType: "labels.text.fill",
+                stylers: [{ color: "#FF6347" }],
+              },
+              {
+                featureType: "poi",
+                stylers: [{ visibility: "off" },],
+              },
+              {
+                featureType: "poi.park",
+                elementType: "geometry",
+                stylers: [{ color: "#64ffda" }],
+              },
+              {
+                featureType: "poi.park",
+                elementType: "labels.text.fill",
+                stylers: [{ color: "#64ffda" }],
+              },
+              {
+                featureType: "road",
+                elementType: "geometry",
+                stylers: [{ color: "#8892b0" }],
+              },
+              /* Outside of roads */
+              {
+                featureType: "road",
+                elementType: "geometry.stroke",
+                stylers: [{ color: "#64ffda" }],
+              },
+              /* Inside Names */
+              {
+                featureType: "road",
+                elementType: "labels.text.fill",
+                stylers: [{ color: "#ccd6f6" }],
+              },
+              /* Freeway */
+              {
+                featureType: "road.highway",
+                elementType: "geometry",
+                stylers: [{ color: "#e6f1ff" }],
+              },
+              /* Outside of Freeway */
+              {
+                featureType: "road.highway",
+                elementType: "geometry.stroke",
+                stylers: [{ color: "#1f2835" }],
+              },
+              {
+                featureType: "road.highway",
+                elementType: "labels.text.fill",
+                stylers: [{ color: "#f3d19c" }],
+              },
+              /* train trails */
+              {
+                featureType: "transit",
+                elementType: "geometry",
+                stylers: [{ color: "#e6f1ff" }],
+              },
+              {
+                featureType: "transit.station",
+                elementType: "labels.text.fill",
+                stylers: [{ color: "#303C55" }],
+              },
+              {
+                featureType: "water",
+                elementType: "geometry",
+                stylers: [{ color: "#17263c" }],
+              },
+              {
+                featureType: "water",
+                elementType: "labels.text.fill",
+                stylers: [{ color: "#64ffda" }],
+              },
+              {
+                featureType: "water",
+                elementType: "labels.text.stroke",
+                stylers: [{ color: "#64ffda" }],
+              },
+            ],
+          });
+          new google.maps.Marker({
+          position: { lat: 33.8372, lng: -117.9143 },
+          map,
+        });
+        }
+      </script>
+    <script src="./index.js"></script>
+    <title>Hector Rodriguez</title>
+</head>
+<body>
+
+
+   <!-- ================================================== 
+                    Main Menu
+   ==================================================  -->
+   <header id="home">
+      <!-- Navigation bar -->
+      <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Skills</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul>
+      </nav> 
+      <!-- End navigation bar -->
+
+      <!-- Home page name & links -->
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Hector Rodriguez</h1>
+            <h3><span>Software Engineer</span> | <span>Cybersecurity</span></h3>
+            <ul class="social">
+               <li><a href="https://github.com/hectorRod101" target="_blank"><img src="images/git.png" width="50" height="50"><i class="fa fa-github"></i></a></li>
+               <li><a href="mailto:hrodri93@gmail.com"><img src="images/e.png" width="50" height="50"><i class="fa fa-envelope"></i></a></li>           
+               <li><a href="https://www.linkedin.com/in/hector-rodriguez-reyes-978826189/" target="_blank"><img src="images/link.png" width="50" height="50"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+         </div>
+      </div>
+      <!-- End page name & links -->
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- /Main End -->
+
+
+   <!-- ================================================== 
+                    About
+   ==================================================  -->
+   <section id="about">  
+      <div class="row section-intro">
+         <div class="col-twelve">
+            <h5 class="divider">About</h5>
+            <div class="intro-info">
+               <!-- Profile Image -->
+               <img src="images/me.jpg" alt="Profile Picture">
+               <!-- About Me-->
+               <p class="lead">
+                  I'm a California State University, Fullerton graduate of class 2020 majoring in Computer Science.
+                  I am a strong independent programmer but I am also able to adapt into a team environment. 
+                  As a first generation college graduate, I am extremely motivated and always ready to push myself. 
+                  As you browse my personal website, my work crosses a broad range of categories but my main interests
+                  lie in Software Engineering and Cybersecurity.
+               </p>
+            </div>            
+         </div>         
+      </div> 
+      <!-- Map -->
+      <div id="map"></div>
+      <div class="row about-content">
+      </div>
+   </section>  <!-- /About End -->
+
+
+   <!-- ================================================== 
+                    Skills
+   ==================================================  -->
+   <section id="resume">
+
+      <!-- Skill Header  -->
+      <div class="row section-intro">
+         <div class="col-twelve">
+            <h5 class="divider">Skills</h5>
+         </div>  
+      </div>
+      <!-- /Skill Header End -->
+
+      <div class="row">
+        <!-- Left Side Skill Bar -->
+        <div class="column">
+          <ul class="skill-bars">
+            <li>
+               <div class="progress percent80"><span>80%</span></div>
+               <strong>C++</strong>
+            </li>
+            <li>
+               <div class="progress percent70"><span>70%</span></div>
+               <strong>C</strong>
+            </li>
+            <li>
+               <div class="progress percent60"><span>60%</span></div>
+               <strong>Java</strong>
+            </li>
+            <li>
+               <div class="progress percent60"><span>60%</span></div>
+               <strong>Python</strong>
+            </li>
+            <li>
+               <div class="progress percent50"><span>50%</span></div>
+               <strong>JS/CSS/HTML</strong>
+            </li>
+            <li>
+                <div class="progress percent70"><span>70%</span></div>
+                <strong>Visual Basics</strong>
+             </li>
+             <li>
+                <div class="progress percent70"><span>70%</span></div>
+                <strong>SQL</strong>
+             </li>
+             <li>
+                <div class="progress percent70"><span>70%</span></div>
+                <strong>Swift</strong>
+             </li>
+         </ul>   <!-- /Left Side Skill Bar End -->
+        </div>
+
+        <!-- Right Side Skill Bar -->
+        <div class="column">
+          <ul class="skill-bars">
+            <li>
+               <div class="progress percent90"><span>90%</span></div>
+               <strong>GitHub</strong>
+            </li>
+            <li>
+               <div class="progress percent90"><span>90%</span></div>
+               <strong>Android Studio</strong>
+            </li>
+            <li>
+               <div class="progress percent60"><span>60%</span></div>
+               <strong>Xcode</strong>
+            </li>
+            <li>
+               <div class="progress percent90"><span>90%</span></div>
+               <strong>Visual Studio Code</strong>
+            </li>
+            <li>
+               <div class="progress percent80"><span>80%</span></div>
+               <strong>WireShark</strong>
+            </li>
+            <li>
+                <div class="progress percent90"><span>90%</span></div>
+                <strong>Linux/Windows/Mac OS</strong>
+             </li>
+             <li>
+                <div class="progress percent70"><span>70%</span></div>
+                <strong>SQLite/MySQL</strong>
+             </li>
+         </ul>   <!-- /Right Side Skill Bar End -->
+        </div>
+      </div>
+
+   </section> <!-- /Skills End -->
+
+
+   <!-- ================================================== 
+                    Projects
+   ==================================================  -->
+   <section id="portfolio">
+      <!-- Project Header -->
+      <div class="row section-intro">
+         <div class="col-twelve">
+            <h5 class="divider">Projects</h5>
+            <h1>Check out my creations.</h1>
+         </div>  
+      </div> <!-- /Project Header End -->
+
+      <div class="row">
+         <div class="twelve columns collapsed">
+             <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+               <!-- 1 Item File Project -->
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap"><img alt="">
+                  </div><main><table>
+                     <tr>
+                        <h6>/MyCloud_Secure</h6>
+                        <p class="file">A Secure File Storage System using a Web Application also a Mobile Application.</p>
+                        <div id="block_container">
+                        <div id="bloc1">
+                           <ul>
+                              <p class="det">AWS MySQL PHP HTML CSS</p>
+                           </ul>
+                        </div>
+                        <div id="bloc2">
+                           <ul>
+                              <li><a href="https://github.com/flipzoid82/CPSC454_Project" target="_blank" class="imgLink"><img src="images/github.png" width="25" height="25"></a></li>
+                           </ul>
+                        </div>
+                        </div>
+                     </tr>
+                  </table></main></div>  <!-- /1 Item File End -->
+
+               <!-- 2 Item File Project -->
+               <div class="columns portfolio-item">
+                  <div class="item-wrap"><img alt="">
+                  </div><main><table>
+                    <tr>
+                        <h6>/Alien_Invasion</h6>
+                        <p class="file">A take on the two-dimensional fixed shooting game Space Invaders.</p>
+                        <div id="block_container2">
+                        <div id="bloc1">
+                           <ul>
+                              <p class="det">PYTHON</p>
+                           </ul>
+                        </div>                    
+                        <div id="bloc2">
+                           <ul>
+                              <li class="alienLink"><a href="https://github.com/hectorRod101/Alien_Invasion" target="_blank" class="imgLink"><img src="images/github.png" width="25" height="25"></a></li>
+                           </ul>
+                        </div>
+                        </div>
+                     </tr>
+                  </table></main></div>  <!-- /2 Item File Project-->
+
+               <!-- 3 Item File Project -->                 
+               <div class="columns portfolio-item">
+                  <div class="item-wrap"><img alt="">
+                  </div><main><table>
+                     <tr>
+                        <h6>/Xanadu_Parse</h6>
+                        <p class="file">A.I. based file name parsing algorithm for media content.</p>
+                        <div id="block_container2">
+                        <div id="bloc1">
+                           <ul>
+                              <p class="det">PYTHON C++</p>
+                           </ul>
+                        </div>
+                        <div id="bloc2">
+                           <ul>
+                              <li class="parsLink"><a href="https://github.com/Archmonger/Xanadu-Parse" target="_blank" class="imgLink"><img src="images/github.png" width="25" height="25"></a></li>
+                           </ul>
+                        </div>
+                        </div>
+                     </tr>
+                  </table></main></div>  <!-- /3 Item File Project-->
+
+               <!-- 4 Item File Project -->                                  
+               <div class="columns portfolio-item">
+                  <div class="item-wrap"><img alt="">
+                  </div><main><table>
+                     <tr>
+                        <h6>/POS_System</h6>
+                        <p class="file">Fully functional POS system.</p>
+                        <div id="block_container3">
+                        <div id="bloc1">
+                           <ul>
+                              <p class="det">VISUAL BASIC</p>
+                           </ul>
+                        </div>
+                        <div id="bloc2">
+                           <ul>
+                              <li class="posLink"><a href="https://github.com/hectorRod101/POS_System" target="_blank" class="imgLink"><img src="images/github.png" width="25" height="25"></a></li>
+                           </ul>
+                        </div>
+                        </div>
+                     </tr>
+                  </table></main></div>  <!-- /4 Item File Project-->
+
+               <!-- 5 Item File Project -->                                  
+               <div class="columns portfolio-item">
+                  <div class="item-wrap"><img alt="">
+                  </div><main><table>
+                     <tr>
+                        <h6>/FTP_Client&Server</h6>
+                        <p class="file">Simple client and server socket communication program.</p>
+                        <div id="block_container2">
+                        <div id="bloc1">
+                           <ul>
+                              <p class="det">C++</p>
+                           </ul>
+                        </div>
+                        <div id="bloc2">
+                           <ul>
+                              <li class="ftpLink"><a href="https://github.com/OsirisLambert/CPSC-471---Project" target="_blank" class="imgLink"><img src="images/github.png" width="25" height="25"></a></li>
+                           </ul>
+                        </div>
+                        </div>   
+                     </tr>
+                  </table></main></div>  <!-- /5 Item File Project-->
+
+               <!-- 6 Item File Project -->                                  
+               <div class="columns portfolio-item">
+                  <div class="item-wrap"><img alt="">
+                  </div><main><table>
+                     <tr>
+                        <h6>/Personal_Website</h6>
+                        <p class="file">Portfolio website designed by me.</p>
+                        <div id="block_container3">
+                        <div id="bloc1">
+                           <ul>
+                              <p class="det">HTML CSS JAVASCRIPT API</p>
+                           </ul>
+                        </div>
+               
+                        <div id="bloc2">
+                           <ul>
+                              <li class="webLink"><a href="https://github.com/hectorRod101" target="_blank" class="imgLink"><img src="images/github.png" width="25" height="25"></a></li>
+                           </ul>
+                        </div>
+                        </div>
+                     </tr>
+                  </table>
+                </main>
+          		</div>  <!-- /6 Item File Project-->
+
+               <!-- 7 Item File Project -->                                  
+               <div class="columns portfolio-item">
+                  <div class="item-wrap"><img alt="">
+                  </div><main>
+                </main>
+          		</div>   <!-- /7 Item File Project-->
+
+               <!-- 8 Item File Project -->                                  
+               <div class="columns portfolio-item">
+                  <div class="item-wrap"><img alt="">
+                  </div><main>
+                </main>
+          		</div>   <!-- /8 Item File Project-->
+            </div>  <!-- portfolio-wrapper end -->
+         </div>  <!-- twelve columns end -->
+   </section>  <!-- Projects Section End -->
+
+
+   <!-- ================================================== 
+                    Contact
+   ==================================================  -->
+   <section id="contact">
+      <!-- Contact Header -->
+      <div class="row section-intro">
+         <div class="col-twelve">
+            <h5 class="divider">Contact</h5>
+            <h1>Keep In Touch</h1>
+         </div> 
+      </div>  
+      <!-- Contact Header End-->
+
+      <div class="row contact-info">
+
+         <div class="col-four tab-full">
+            <div class="icon">
+               <i class="icon-mail"></i>
+            </div>
+          </div>
+         
+         <div class="col-four tab-full collapse">
+            <!-- Email -->
+            <h5>Email Me At</h5>
+            <p>hrodri93@gmail.com</p>
+
+            <!-- LinkedIn -->
+            <h5>Let's Connect</h5>
+            <a href="https://www.linkedin.com/in/hector-rodriguez-reyes-978826189/" target="_blank">LinkedIn Profile</a>
+         </div>
+	      
+	      <div class="col-four tab-full collapse">
+            <div class="icon">
+               <i class="icon-mail"></i>
+            </div>
+         </div>
+         
+      </div> 
+   </section>  <!-- /Contact Section End -->
+
+
+ 
+   <!-- ================================================== 
+                    Footer
+   ==================================================  -->
+   <footer>
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="copyright">
+               <li>Edit by Hector Rodriguez</li>
+               <li>&copy; Copyright 2020</li>
+               <li><div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><u>Top</u><i class="icon-up-open"></i></a></div></li>
+            </ul>
+
+         </div>
+      </div>
+
+   </footer>  <!-- Footer End -->
+
+ 
+   <!-- ================================================== 
+                    JS
+   ==================================================  -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+</body>
+</html>
