@@ -11,4 +11,4 @@ The player continuously must survive with only three lives for the entirety of t
 alien ship reaches the bottom of the screen and collides with their ship. Each wave the alien ships get faster which makes it harder to 
 aim at them.
 
-<img src="https://i.imgur.com/ANxxRuY.jpg" width="800" height="600" />
+<img src="https://i.imgur.com/ANxxRuY.jpg" width="900" height="600" />
