@@ -9,4 +9,4 @@ License: MIT/GPL
 A simple edited website template. Given template credit is inside the program's code.<br/>
 Yes, fork repo and edit.
 
-<img src="https://i.imgur.com/ANxxRuY.jpg" width="900" height="600" />
+<img src="https://i.imgur.com/ANxxRuY.jpg" width="900" height="500" />
