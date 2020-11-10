@@ -99,7 +99,7 @@
    }
    @media only screen and (max-width:768px) {
       .intro-info img {
-         height: 7.8rem;
+         height: 20.8rem;
          width: 7.8rem;
       }
       .intro-info .lead {
@@ -167,7 +167,7 @@
          margin-top: 3rem;
       }
       .intro-info img {
-         height: 9.6rem;
+         height: 20.6rem;
          width: 8.6rem;
          float: none;
          display: inline-block;
