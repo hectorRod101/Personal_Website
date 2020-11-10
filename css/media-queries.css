@@ -100,7 +100,7 @@
    @media only screen and (max-width:768px) {
       .intro-info img {
          height: 20.8rem;
-         width: 20.8rem;
+         width: 40.8rem;
       }
       .intro-info .lead {
          padding-left: 11rem;
@@ -168,7 +168,7 @@
       }
       .intro-info img {
          height: 20.6rem;
-         width: 20.6rem;
+         width: 40.6rem;
          float: none;
          display: inline-block;
       }
