@@ -547,11 +547,11 @@
    footer .social-links li { margin-left: 18px; }
 
    /* Go To Top Button */
-   #go-top { margin-left: 65px;}
+   #go-top { margin-left: -22px; }
    #go-top a {
    	width: 54px;
    	height: 54px;
-      font-size: 18px;
+      font-size: 14px;
       line-height: 54px;
    }
 
