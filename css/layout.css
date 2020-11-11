@@ -1132,7 +1132,6 @@ footer .social-links li:first-child { margin-left: 0; }
 	display: block;
 	width: 0px;
 	height: 0px;
-  background-color: #095153;
 
 	-webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
