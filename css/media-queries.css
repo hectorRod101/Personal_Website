@@ -101,6 +101,7 @@
       .intro-info img {
          height: 50.8rem;
          width: 35.8rem;
+         padding-right: 5px;
       }
       .intro-info .lead {
          padding-left: 11rem;
