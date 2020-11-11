@@ -105,10 +105,10 @@
       .intro-info .lead {
          padding-left: 11rem;
       }
-      .about-content h3 {
+      .resume-content h3 {
          text-align: center;
       }
-      .about-content .info-list, .about-content {
+      .resume-content .info-list, .resume-content {
          margin-bottom: 4.2rem;
       }
       .button-section .button {
@@ -459,7 +459,7 @@
       text-align: center;
       padding: 15px 20px;
    }
-   #about .main-col { padding-right: 30px; }
+   #resume .main-col { padding-right: 30px; }
 
 
    /* Resume Section
